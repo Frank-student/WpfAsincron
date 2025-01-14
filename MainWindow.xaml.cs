@@ -85,6 +85,7 @@ namespace WpfAsincron
             lbl_text_afis.Content = "Cleared!";
             progres.Value = 0;
         }
+
         private async void btn_LoadFile_Click(object sender, RoutedEventArgs e)
         {
             string filePath = "path_to_your_file.txt"; // Update with your file path
@@ -98,6 +99,5 @@ namespace WpfAsincron
             string content = text_crypted.Text;
             await FileHelper.WriteFileAsync(filePath, content);
         }
-
     }
 }
