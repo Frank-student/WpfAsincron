@@ -88,14 +88,14 @@ namespace WpfAsincron
 
         private async void btn_LoadFile_Click(object sender, RoutedEventArgs e)
         {
-            string filePath = "path_to_your_file.txt";
+            string filePath = "file.txt"; // update
             string content = await FileHelper.ReadFileAsync(filePath);
             text_originall.Text = content;
         }
 
         private async void btn_SaveFile_Click(object sender, RoutedEventArgs e)
         {
-            string filePath = "path_to_your_file.txt";
+            string filePath = "file.txt"; // update
             string content = text_crypted.Text;
             await FileHelper.WriteFileAsync(filePath, content);
         }
