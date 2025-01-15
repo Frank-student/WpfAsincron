@@ -40,9 +40,9 @@ public class Cripting
                 int progressPercentage = (i + 1) * 100 / text.Length;
                 progress?.Report(progressPercentage);
 
-                Thread.Sleep(100); // Simulate work
+                Thread.Sleep(100);
             }
-            return textCriptat + "|" + key; // Return both encrypted text and key
+            return textCriptat + "|" + key;
         }, ct);
     }
 
@@ -64,7 +64,7 @@ public class Cripting
                 int progressPercentage = (i + 1) * 100 / text.Length;
                 progress?.Report(progressPercentage);
 
-                Thread.Sleep(100); // Simulate work
+                Thread.Sleep(100); 
             }
             return textDecriptat;
         }, ct);

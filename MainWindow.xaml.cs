@@ -35,7 +35,7 @@ namespace WpfAsincron
                 string result = await Cripting.CriptareAsync(text, token, progress);
                 var parts = result.Split('|');
                 text_crypted.Text = parts[0];
-                text_decrypted.Tag = parts[1]; // Store the key in the Tag property
+                text_decrypted.Tag = parts[1];
                 lbl_text_afis.Content = "Encryption Finalized!";
             }
             catch (OperationCanceledException)
@@ -88,14 +88,14 @@ namespace WpfAsincron
 
         private async void btn_LoadFile_Click(object sender, RoutedEventArgs e)
         {
-            string filePath = "path_to_your_file.txt"; // Update with your file path
+            string filePath = "path_to_your_file.txt";
             string content = await FileHelper.ReadFileAsync(filePath);
             text_originall.Text = content;
         }
 
         private async void btn_SaveFile_Click(object sender, RoutedEventArgs e)
         {
-            string filePath = "path_to_your_file.txt"; // Update with your file path
+            string filePath = "path_to_your_file.txt";
             string content = text_crypted.Text;
             await FileHelper.WriteFileAsync(filePath, content);
         }
