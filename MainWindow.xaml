@@ -31,6 +31,9 @@
             <Button x:Name="btn_Freeze" Content="Freeze" Width="80" Height="30" Margin="10" Background="#FFA500" Foreground="#FFFFFF" BorderThickness="0" Click="btn_Freeze_Click"/>
             <Button x:Name="btn_Cancel" Content="Cancel" Width="80" Height="30" Margin="10" Background="#FF3333" Foreground="#FFFFFF" BorderThickness="0" Click="btn_Cancel_Click"/>
             <Button x:Name="btn_Clear" Content="Clear" Width="80" Height="30" Margin="10" Background="#FF3333" Foreground="#FFFFFF" BorderThickness="0" Click="btn_Clear_Click"/>
+            <Button x:Name="btn_LoadFile" Content="Load File" Width="80" Height="30" Margin="10" Background="#00ADEF" Foreground="#FFFFFF" BorderThickness="0" Click="btn_LoadFile_Click"/>
+            <Button x:Name="btn_SaveFile" Content="Save File" Width="80" Height="30" Margin="10" Background="#00ADEF" Foreground="#FFFFFF" BorderThickness="0" Click="btn_SaveFile_Click"/>
+
         </StackPanel>
 
         <Label x:Name="lbl_text_afis" Content="Label" HorizontalAlignment="Left" Margin="21,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.595" Foreground="#FFFFFF" Grid.Row="4" />
